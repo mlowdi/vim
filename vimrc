@@ -1,3 +1,8 @@
+" Pathogen setup. My guess is it's best to put it at the top of the file...
+execute pathogen#infect()
+
+set nofoldenable
+
 " Mostly taken from https://danielmiessler.com/study/vim/ 
 " remap key roll to esc
 inoremap jj <ESC>
