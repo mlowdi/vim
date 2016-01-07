@@ -3,11 +3,10 @@ execute pathogen#infect()
 
 set nofoldenable
 
-" Mostly taken from https://danielmiessler.com/study/vim/ 
+" Mostly taken from https://danielmiessler.com/study/vim/
 " remap key roll to esc
 inoremap jj <ESC>
 
-" I'll figure this out soon
 let mapleader = ","
 
 " leader commands
@@ -64,3 +63,30 @@ set backspace=indent,eol,start
 set laststatus=2
 set number
 " set relativenumber
+
+" All below taken from
+" http://joshldavis.com/2014/04/05/vim-tab-madness-buffers-vs-tabs/
+
+" Airline settings
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
+" This means: set a tabline and show only filenames
+
+let g:airline_theme = 'solarized'
+
+" To open a new empty buffer
+" This replaces :tabnew which I used to bind to this mapping
+nmap <leader>T :enew<cr>
+
+" Move to the next buffer
+nmap <leader>l :bnext<CR>
+
+" Move to the previous buffer
+nmap <leader>h :bprevious<CR>
+
+" Close the current buffer and move to the previous one
+" This replicates the idea of closing a tab
+nmap <leader>bq :bp <BAR> bd #<CR>
+
+" Show all open buffers and their status
+nmap <leader>bl :ls<CR>
