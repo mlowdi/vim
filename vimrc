@@ -90,3 +90,8 @@ nmap <leader>bq :bp <BAR> bd #<CR>
 
 " Show all open buffers and their status
 nmap <leader>bl :ls<CR>
+
+
+" Insert timestamp for Jekyll
+" Type tds and <space> and BOOM
+:iab <expr> tds strftime("%Y-%m-%d %H:%M:%S")
