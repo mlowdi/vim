@@ -16,6 +16,8 @@ nnoremap <leader>n :set invnumber<CR>
 filetype plugin indent on
 syntax on
 set encoding=utf-8
+" as per https://stackoverflow.com/questions/1878974/redefine-tab-as-4-spaces
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
 " More ideas from http://stevelosh.com/blog/2010/09/coming-home-to-vim/
 " Most of this is somewhat rejigged because I don't program too much.
