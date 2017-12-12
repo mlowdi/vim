@@ -74,7 +74,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 " This means: set a tabline and show only filenames
 
-let g:airline_theme = 'solarized'
+let g:airline_theme = 'bubblegum'
 
 " To open a new empty buffer
 " This replaces :tabnew which I used to bind to this mapping
