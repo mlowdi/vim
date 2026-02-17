@@ -10,7 +10,7 @@ inoremap jj <ESC>
 let mapleader = ","
 
 " leader commands
-nnoremap <leader>n :set invnumber<CR>
+noremap <leader>n :set relativenumber!<CR>
 
 " Other recommended misc settings
 filetype plugin indent on
